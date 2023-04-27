@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=Roboto:wght@300&family=Source+Sans+Pro:wght@200&display=swap');
+/* font-family: 'Edu NSW ACT Foundation', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Source Sans Pro', sans-serif; */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    background-color: #123069;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 2;
+    text-align: end;
+}
+header img{
+    height: 50px;
+    width: auto;
+    position: relative;
+    top: 10px;
+}
+h1{
+    display: inline;
+    color: white;
+}
+h2{
+    color: #123069;
+    text-align: center;
+    margin: 10px;
+}
+nav{
+    background-color: #3390dc;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    margin-top: auto; 
+    height: auto;
+    z-index: 1;
+    display: table;
+}
+nav ul{
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: table-row;
+}
+nav li{
+    display: table-cell;
+    width: calc(100%/4);
+    margin: 0;
+    padding: 10px;
+}
+nav li:hover > a{
+    color: #5fbbff;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+.sub_ppal{
+    font-size: 70px;
+    text-align: center;
+    margin: 50px;
+}
+.games {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
+    grid-gap: 20px;
+}
+.gta {
+    grid-row: 1;
+    grid-column: 1;
+}
+.fifa {
+    grid-row: 1;
+    grid-column: 2;
+}
+.god {
+    grid-row: 1;
+    grid-column: 3;
+}
+.games h3, .ps_plus p, .games p{
+    font-size: 1.5vw;
+    line-height: 2.2vw;
+    margin: 20px;
+    text-align: justify;
+}
+.games h3, .ps_plus h3{
+    text-align: center;
+    color: #5fbbff;
+}
+.games img, .ps_plus img{
+    height: 400px;
+    width: 90%;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+} 
+.ps_plus p{
+    height: 100px;
+    width: 400px;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.games p{
+    text-align: justify;
+} 
+.ps_plus {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: auto;
+    margin: 0 auto;
+    text-align: justify;
+}
+.ps_plus h3{
+    font-size: 1.5vw;
+    line-height: 2.2vw;
+    margin: 20px;
+}
+.contact{
+    position: fixed;
+    bottom: 25%;
+    right: 0;
+    text-align: end;
+}
+.contact img{
+    display: block;
+    height: auto;
+    width: 50px;
+}
+.contact h4{
+    font-size: 20px;
+    color: #123069;
+    writing-mode: vertical-lr;
+    text-orientation: upright; 
+    transform: translateX(100%); 
+    text-transform: uppercase;
+    margin: 0; 
+    padding: 0; 
+} 
+.all{
+    display: flex;
+    flex-direction: column;
+}
+.plus-e{
+    position: absolute;
+    z-index: 2;
+    top: 650px;
+    right: 30px;
+    list-style-type: circle;
+    font-size: 20px;
+}
+.plus-ex{
+    position: absolute;
+    z-index: 2;
+    top: 1400px;
+    right: 30px;
+    list-style-type: circle;
+    font-size: 20px;
+}
+.plus-d{
+    position: absolute;
+    z-index: 2;
+    top: 2150px;
+    right: 30px;
+    list-style-type: circle;
+    font-size: 20px;
+    color: white;
+}
+.plus li{
+    margin: 5px;
+}
+.plus img{
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.ps_plus{
+    margin-bottom: 80px;
+}
+
+@media only screen and (min-width:320px) and (max-width:700px){
+    header img{
+        position: relative;
+        right: 0;
+        top: auto;
+    }
+    h1{
+        font-size: 100%;
+    }
+    .sub_ppal{
+        font-size: 50px;
+    }
+    .games{
+        display: block;
+    }
+    .games h3{
+        font-size: 20px;
+    }
+    .games p{
+        font-size: 15px;
+        line-height: 15px;
+    }
+    .contact{
+        top: calc(100%/3);
+    }
+}
